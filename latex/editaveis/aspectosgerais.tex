@@ -1,175 +1,45 @@
 \part{Aspectos Gerais}
 
-\chapter[Aspectos Gerais]{Aspectos Gerais}
+\chapter[Introdução]{Introdução}
 
-Estas instruções apresentam um conjunto mínimo de exigências necessárias a 
-uniformidade de apresentação do relatório de Trabalho de Conclusão de Curso 
-da FGA. Estilo, concisão e clareza ficam inteiramente sob a 
-responsabilidade do(s) aluno(s) autor(es) do relatório.
 
-As disciplinas de Trabalho de Conclusão de Curso (TCC) 01 e Trabalho de 
-Conclusão de Curso (TCC) 02 se desenvolvem de acordo com Regulamento 
-próprio aprovado pelo Colegiado da FGA. Os alunos matriculados nessas 
-disciplinas devem estar plenamente cientes de tal Regulamento. 
 
-\section{Composição e estrutura do trabalho}
 
-A formatação do trabalho como um todo considera três elementos principais: 
-(1) pré-textuais, (2) textuais e (3) pós-textuais. Cada um destes, pode se 
-subdividir em outros elementos formando a estrutura global do trabalho, 
-conforme abaixo (as entradas itálico são \textit{opcionais}; em itálico e
-negrito são \textbf{\textit{essenciais}}):
+Nas ultimas décadas houve uma evolução muito grande no campo de Engenharia de Software 
+e um dos campos que apresentou um grande crescimento foi o da Inteligencia Artificial(IA).
+A utilização de IA promoveu diversos avanços nas diferentes áreas dentro da engenharia de software
+como na engenharia de requisitos\cite{sofian2022systematic}. A Engenharia de Requisitos (ER) envolve a identificação, análise e documentação de requisitos de software, um processo que é vital para projetos de desenvolvimento \cite{Sommerville2007}.
 
-\begin{description}
-	\item [Pré-textuais] \
+Um requisito é um atributo necessário em um sistema, uma declaração que determina uma característica, capacidade ou fator de qualidade de um sistema para que ele possua valor e utilidade para um cliente ou usuário. Os requisitos são necessários pois estabelecem a base para todo o trabalho de desenvolvimento subsequente. Uma vez definidos os requisitos, os desenvolvedores dão início às outras atividades técnicas: design do sistema, desenvolvimento, teste, implementação e operação.
+A engenharia de requisitos é complexa e envolve mais do que simplesmente registrar as necessidades do cliente. Os requisitos são dinâmicos e mudam ao longo do tempo, à medida que nossa compreensão do problema evolui. É importante ser preciso e flexível ao mesmo tempo. Práticas ineficazes de definição de requisitos são um problema comum na indústria, mas adotando uma abordagem disciplinada é possível aumentar as taxas de sucesso dos projetos\cite{young2004requirements}.
 
-	\begin{itemize}
-		\item Capa
-		\item Folha de rosto
-		\item \textit{Dedicatória}
-		\item \textit{Agradecimentos}
-		\item \textit{Epígrafe}
-		\item Resumo
-		\item Abstract
-		\item Lista de figuras
-		\item Lista de tabelas
-		\item Lista de símbolos e
-		\item Sumário
-	\end{itemize}
+No desenvolvimento de software, a elicitação de requisitos de alta qualidade é um fator crítico para o sucesso. Deficiências na elicitação de requisitos podem impactar negativamente todo o processo de desenvolvimento, resultando em altos custos para as organizações envolvidas. Embora a correção de deficiências durante a fase de elicitação de requisitos tenha sido relatada como responsável por até 75\% de todos os custos de remoção de erros ao longo do ciclo de vida do desenvolvimento de software, a falta de requisitos claros e completos pode até mesmo levar ao fracasso total de um projeto de desenvolvimento de software \cite{urquhart1999themes}.
 
-	\item [Textuais] \
 
-	\begin{itemize}
-		\item \textbf{\textit{Introdução}}
-		\item \textbf{\textit{Desenvolvimento}}
-		\item \textbf{\textit{Conclusões}}
-	\end{itemize}
+A adoção da IA na ER é justificada pela necessidade crescente de desenvolver software produtivo, eficiente e de alta qualidade, especialmente no contexto da revolução industrial 4.0 \cite{sofian2022systematic}.
+ A IA pode auxiliar na elicitação de requisitos, uma tarefa frequentemente estudada, podendo potencializar os requisitos elicitados nos processos de ER. Além disso, estudos exploratórios recentes têm demonstrado o potencial do aprendizado  de máquina que permite que um modelo faça previsões para classes não vistas durante o treinamento, essa técnica é chamada de aprendizado de máquina não supervisionado. No contexto da Engenharia de Requisitos, essa técnica pode ser utilizada para identificar e classificar requisitos que não foram explicitamente definidos ou considerados durante o desenvolvimento do modelo e apresenta uma nova fronteira de inovação na ER \cite{alhoshan2023zero}. Nessa fase de elicitação de requisitos, a utilização da tecnologia de modelo de aprendizado de máquina não supervisionado como ChatGPT proporciona um desafio em relação a implementação num cenario real. 
+ 
+%  Tendo isto em vista quais os desafios das equipes de desenvolvimento de software ao implementar o uso de tecnologia de modelo de aprendizado de máquina não supervisionado como ChatGPT na fase de elicitação de requisitos e como isso afeta o resultado do processo?
 
-	\item [Pós-Textuais] \
-	
-	\begin{itemize}
-		\item Referências bibliográficas
-		\item \textit{Bibliografia}
-		\item Anexos
-		\item Contracapa
-	\end{itemize}
-\end{description}
+%  qual os desafios do uso de IA para a melhoria no processo de elicitação de requisitos
 
-Os aspectos específicos da formatação de cada uma dessas três partes 
-principais do relatório são tratados nos capítulos e seções seguintes.
+%  Contudo é necessário avaliar por meio de um estudo de caso real os desafios do uso de IA para melhoria do processo de elicitação de requisitos, 
 
-No modelo \LaTeX, os arquivos correspondentes a estas estruturas que devem
-ser editados manualmente estão na pasta \textbf{editáveis}. Os arquivos
-da pasta \textbf{fixos} tratam os elementos que não necessitam de 
-edição direta, e devem ser deixados como estão na grande maioria dos casos.
+ Nesse trabalho será apresentado um estudo sobre a utilização dessa tecnologia na etapa de elicitação de requisitos e apresentar um modelo para aplicar em um estudo de caso real.
 
-\section{Considerações sobre formatação básica do relatório}
+ \section{Objetivos}
+\subsection{Obetivos Gerais}
 
-A seguir são apresentadas as orientações básicas sobre a formatação do
-documento. O modelo \LaTeX\ \textbf{já configura todas estas opções corretamente},
-de modo que para os usuários deste modelo o texto de toda esta Seção é 
-\textbf{meramente informativo}.
+Fazer uma análise das metodologias de avaliação de desempenho da implementação de IA na engenharia de requisitos e identificar lacunas e oportunidades de melhoria,além da discussão sobre a aplicação e adaptação dessas metodologias para o contexto da elicitação de requisitos. 
 
-\subsection{Tipo de papel, fonte e margens}
 
-Papel -- Na confecção do relatório deverá ser empregado papel branco no 
-formato padrão A4 (21 cm x 29,7cm), com 75 a 90 g/m2.
-
-Fonte -- Deve-se utilizar as fontes Arial ou Times New Roman no tamanho 12 
-pra corpo do texto, com variações para tamanho 10 permitidas para a 
-wpaginação, legendas e notas de rodapé. Em citações diretas de mais de três 
-linhas utilizar a fonte tamanho 10, sem itálicos, negritos ou aspas. Os 
-tipos itálicos são usados para nomes científicos e expressões estrangeiras, 
-exceto expressões latinas.
-
-Margens -- As margens delimitando a região na qual todo o texto deverá estar 
-contido serão as seguintes: 
+\subsection{Objetivos Específicos}
 
 \begin{itemize}
-	\item Esquerda: 03 cm;
-	\item Direita	: 02 cm;
-	\item Superior: 03 cm;
-	\item Inferior: 02 cm. 
+	\item Realizar uma análise crítica das metodologias existentes.
+	\item Identificar os principais desafios na engenharia de requisitos no contexto do desenvolvimento de um sistema no Senado.
+	\item Propor uma metodologia para avaliar o desempenho e os resultados da implementação da IA na engenharia de requisitos.
+	\item Identificar os possíveis impactos do uso da Inteligência Artificial.
 \end{itemize}
 
-\subsection{Numeração de Páginas}
-
-A contagem sequencial para a numeração de páginas começa a partir da 
-primeira folha do trabalho que é a Folha de Rosto, contudo a numeração em 
-si só deve ser iniciada a partir da primeira folha dos elementos textuais. 
-Assim, as páginas dos elementos pré-textuais contam, mas não são numeradas 
-e os números de página aparecem a partir da primeira folha dos elementos 
-textuais, que se iniciam na Introdução. 
-
-Os números devem estar em algarismos arábicos (fonte Times ou Arial 10) no 
-canto superior direito da folha, a 02 cm da borda superior, sem traços, 
-pontos ou parênteses. 
-
-A paginação de Apêndices e Anexos deve ser contínua, dando seguimento ao 
-texto principal.
-
-\subsection{Espaços e alinhamento}
-
-Para a monografia de TCC 01 e 02 o espaço entrelinhas do corpo do texto 
-deve ser de 1,5 cm, exceto RESUMO, CITAÇÔES de mais de três linhas, NOTAS 
-de rodapé, LEGENDAS e REFERÊNCIAS que devem possuir espaçamento simples. 
-Ainda, ao se iniciar a primeira linha de cada novo parágrafo se deve 
-tabular a distância de 1,25 cm da margem esquerda.
-
-Quanto aos títulos das seções primárias da monografia, estes devem começar 
-na parte superior da folha e separados do texto que o sucede, por um espaço 
-de 1,5 cm entrelinhas, assim como os títulos das seções secundárias, 
-terciárias. 
-
-A formatação de alinhamento deve ser justificado, de modo que o texto fique 
-alinhado uniformemente ao longo das margens esquerda e direita, exceto para 
-CITAÇÕES de mais de três linhas que devem ser alinhadas a 04 cm da margem 
-esquerda e REFERÊNCIAS que são alinhadas somente à margem esquerda do texto 
-diferenciando cada referência.
-
-\subsection{Quebra de Capítulos e Aproveitamento de Páginas}
-
-Cada seção ou capítulo deverá começar numa nova pagina (recomenda-se que 
-para texto muito longos o autor divida seu documento em mais de um arquivo 
-eletrônico). 
-
-Caso a última pagina de um capitulo tenha apenas um número reduzido de 
-linhas (digamos 2 ou 3), verificar a possibilidade de modificar o texto 
-(sem prejuízo do conteúdo e obedecendo as normas aqui colocadas) para 
-evitar a ocorrência de uma página pouco aproveitada.
-
-Ainda com respeito ao preenchimento das páginas, este deve ser otimizado, 
-evitando-se espaços vazios desnecessários. 
-
-Caso as dimensões de uma figura ou tabela impeçam que a mesma seja 
-posicionada ao final de uma página, o deslocamento para a página seguinte 
-não deve acarretar um vazio na pagina anterior. Para evitar tal ocorrência, 
-deve-se reposicionar os blocos de texto para o preenchimento de vazios. 
-
-Tabelas e figuras devem, sempre que possível, utilizar o espaço disponível 
-da página evitando-se a \lq\lq quebra\rq\rq\ da figura ou tabela. 
-
-\section{Cópias}
-
-Nas versões do relatório para revisão da Banca Examinadora em TCC1 e TCC2, 
-o aluno deve apresentar na Secretaria da FGA, uma cópia para cada membro da 
-Banca Examinadora.
-
-Após a aprovação em TCC2, o aluno deverá obrigatoriamente apresentar a 
-versão final de seu trabalho à Secretaria da FGA na seguinte forma:
-
-\begin{itemize}
-	\item 01 cópia encadernada para arquivo na FGA;
-	\item 01 cópia não encadernada (folhas avulsas) para arquivo na FGA;
-	\item 01 cópia em CD de todos os arquivos empregados no trabalho.
-\end{itemize}
-
-A cópia em CD deve conter, além do texto, todos os arquivos dos quais se 
-originaram os gráficos (excel, etc.) e figuras (jpg, bmp, gif, etc.) 
-contidos no trabalho. Caso o trabalho tenha gerado códigos fontes e 
-arquivos para aplicações especificas (programas em Fortran, C, Matlab, 
-etc.) estes deverão também ser gravados em CD. 
-
-O autor deverá certificar a não ocorrência de “vírus” no CD entregue a 
-secretaria. 
 
